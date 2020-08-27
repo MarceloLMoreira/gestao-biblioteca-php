@@ -1,42 +1,33 @@
 <?php
 	class Livro{
-		
-		
-	}
-
-
-
-
-
-//-----------------------------------------------------------------------
-
-
-/*
-<?php
-	class Carro{
-		private $cor;
+		private $nome;
+		private $autor;
 		private $ano;
-		private $modelo;
-		private $marca;
+		private $genero;
+		private $editora;
 		
-		//Método construtor pode ser feito com o nome da própria classe OU com o nome __construct
-		//function __construct($cor, $ano, $modelo, $marca){
-		function Carro($cor, $ano, $modelo, $marca){
-			$this->cor = $cor;
+		function Livro($nome, $autor, $ano, $genero, $editora){
+			$this->nome = $nome;
+			$this->autor = $autor;
 			$this->ano = $ano;
-			$this->modelo = $modelo;
-			$this->marca = $marca;
-		}
-		//Observar que no $this->atributo coloca-se o $ apenas no início
-		
-		//set
-		public function setCor($cor){
-			$this->cor = $cor;
+			$this->genero = $genero;
+			$this->editora = $editora;
 		}
 		
-		//get
-		public function getCor(){
-			return $this->cor;
+		public function setNome($nome){
+			$this->nome = $nome;
+		}
+		
+		public function getNome(){
+			return $this->nome;
+		}
+		
+		public function setAutor($autor){
+			$this->autor = $autor;
+		}
+		
+		public function getAutor(){
+			return $this->autor;
 		}
 		
 		public function setAno($ano){
@@ -47,23 +38,19 @@
 			return $this->ano;
 		}
 		
-		public function setModelo($model){
-			$this->modelo = $modelo;
+		public function setGenero($genero){
+			$this->genero = $genero;
 		}
 		
-		public function getModelo(){
-			return $this->modelo;
+		public function getGenero(){
+			return $this->genero;
 		}
 		
-		public function setMarca($marca){
-			$this->marca = $marca;
+		public function setEditora($editora){
+			$this->editora = $editora;
 		}
 		
-		public function getMarca(){
-			return $this->marca;
+		public function getEditora(){
+			return $this->editora;
 		}
-		
-		
 	}
-	
-*/
